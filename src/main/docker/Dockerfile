@@ -1,4 +1,4 @@
-FROM openjdk:11
+FROM openjdk:8-alpine
 
 ADD target/moap-0.0.1-SNAPSHOT.jar docker-app.jar
 
