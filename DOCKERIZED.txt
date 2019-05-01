@@ -5,3 +5,20 @@ How to dockerize a spring boot app:
 2) Add Dockerfile
 
 3) Add entrypoint in Dockerfile
+
+
+*********************************************
+
+
+What is inside the Dockerfile ?
+
+FROM: This is the base image. Example: FROM openjdk:8
+
+ADD: Adds the jar built by the application into the docker container.
+        -jar built by the application: target/ moap-0.0.1-SNAPSHOT.jar
+        -into the container: Just add it to the root of the container. Example: ADD target/ moap-0.0.1-SNAPSHOT.jar docker-app.jar
+        -The name of the app in the container is docker-app.jar
+
+EXPOSE: Expose the app in the container on a port. Example: EXPOSE 8085.
+
+ENTRYPOINT: Allow the container to run as a executable. Example:  ENTRYPOINT ["java", "-jar", "docker-app.jar"]
