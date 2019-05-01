@@ -1,6 +1,6 @@
-FROM openjdk:8
+FROM openjdk:11
 
-ADD target/ moap-0.0.1-SNAPSHOT.jar docker-app.jar
+ADD target/moap-0.0.1-SNAPSHOT.jar docker-app.jar
 
 EXPOSE 8085
 

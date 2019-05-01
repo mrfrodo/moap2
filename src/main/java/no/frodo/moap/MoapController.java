@@ -10,7 +10,7 @@ public class MoapController {
 
     @GetMapping(value="/greeting")
     public String sayHello() {
-        return "hello from moap\n";
+        return "hello from moap docker\n";
     }
 
 }
