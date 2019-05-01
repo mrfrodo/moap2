@@ -1,0 +1,7 @@
+How to dockerize a spring boot app:
+
+1) Create catalog src/main/docker
+
+2) Add Dockerfile
+
+3) Add entrypoint in Dockerfile
